@@ -13,4 +13,5 @@ if st.button('predict sales'):
 	input_data=np.arrary([[TV,RADIO,NEWSPAPER]])
 	prediction=model.predict(input_data)[0]
 
-st.sucess(f'predict sales:{prediction:.2f}')
+st.success(f'predict sales:{prediction:.2f}')
+
