@@ -10,9 +10,10 @@ Radio=st.number_input("Radio Adv Budget",min_value=0.0)
 Newspaper=st.number_input("Newspaper Budget",min_value=0.0)
 
 if st.button('predict sales'):
-	input_data=np.arrary([[TV,Radio,Newspaper]])
+	input_data=np.array([[TV,Radio,Newspaper]])
 	prediction=model.predict(input_data)[0]
 	st.success(f'predict sales:{prediction:.2f}')
+
 
 
 
